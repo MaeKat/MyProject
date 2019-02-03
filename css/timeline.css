@@ -130,9 +130,11 @@ header h1{
   background: rgb(255,255,255);
   font-weight: 600;
   z-index: 15;
-  padding: 6px 10px;
+  padding: 5px;
+  margin:16px;
   text-align: left;
   border-radius: 5px;
+  line-height: 35px;
 }
 
 .direction-l .flag:after,
@@ -165,7 +167,7 @@ header h1{
 .time-wrapper {
   display: block;
   position: relative;
-  margin: 4px 0 0 0;
+  margin: 50px 0 0 0;
   z-index: 14;
   line-height: 1em;
   vertical-align: middle;
@@ -174,6 +176,7 @@ header h1{
 
 .direction-l .time-wrapper {
   float: none;
+  position:right;
 }
 
 .direction-r .time-wrapper {
@@ -181,7 +184,7 @@ header h1{
 }
 
 .time {
-  background: #00c4f3;
+  background: #5507ad;
   display: inline-block;
   padding: 8px;
 }
@@ -189,12 +192,13 @@ header h1{
 .desc {
   position: relative;
   margin: 1em 0 0 0;
-  padding: 1em;
+  padding: 5px;
   background: rgb(254,254,254);
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   box-shadow: 0 0 1px rgba(0,0,0,0.20);
   z-index: 15;
+  text-align: left;
 }
 
 .direction-l .desc,
@@ -255,7 +259,7 @@ header h1{
 
   .direction-l .flag:after {
     left: auto;
-    right: -16px;
+    right: -100px;
     top: 50%;
     margin-top: -8px;
     border: solid transparent;
@@ -279,15 +283,16 @@ header h1{
   }
 
   .direction-l .time-wrapper {
-    float: left;
+    float: right;
   }
 
   .direction-r .time-wrapper {
-    float: right;
+    float: left;
   }
 
   .time {
     padding: 5px 10px;
+    width:fit-content;
   }
 
   .direction-r .desc {
