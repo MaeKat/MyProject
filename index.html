@@ -7,36 +7,10 @@
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
 <body>
-<style>
-  /*icon styles*/
-  .fi-social-facebook {
-    color: dodgerblue;
-    font-size: 2rem;
-  }
-  .fi-social-youtube {
-    color: red;
-    font-size: 2rem;
-  }
-  .fi-social-pinterest {
-    color: darkred;
-    font-size: 2rem;
-  }
-  i.fi-social-instagram {
-    color: brown;
-    font-size: 2rem;
-  }
-  i.fi-social-tumblr {
-    color: navy;
-    font-size: 2rem;
-  }
-  .fi-social-twitter {
-    color: skyblue;
-    font-size: 2rem;
-  }
 
-</style>
-<header>
 <!--
+<header>
+
 <div class="top-bar">
 <div class="top-bar-left">
 <ul class="menu">
@@ -54,7 +28,7 @@
 </div>
 </div>
 
--->
+
 
 
 <br>
@@ -113,6 +87,23 @@
 </li>
 </ul>
 </div>
+
+</header>
+-->
+<link rel="stylesheet" type="text/css" href="css/timeline.css">
+
+
+<header id = "navbar">
+  <a id="logo" href="index.html">Home</a>
+ <nav>
+   <ul>
+     <li><a href="resume.html" >Professional</a></li>
+     <li><a href="#">Hobbies</a></li>
+     <li><a href="#">Pets</a></li>
+     <li><a href="https://github.com/MaeKat" id="twitter">GitHub</a></li>
+     <li><a href="#" id="fb">Facebook</a></li>
+   </ul>
+ </nav>
 </header>
 <br>
 <div class="row">
@@ -232,7 +223,23 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 <script>
-      $(document).foundation();
+     
+    
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+$(document).foundation();
+    
+    
     </script>
 </body>
 </html>
