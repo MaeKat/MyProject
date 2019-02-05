@@ -67,6 +67,7 @@ nav ul li a:hover {
 body{
   font-family: 'Raleway', sans-serif;
   color: #333;
+  min-height:175%;
 }
 
 header h1{
