@@ -88,8 +88,17 @@
           position: absolute;
           top: 0;
         }
-        
+        .align-col{
+          float:left;
+          width: 25%;
+        }
+.row{
+  width:80%;
+}
+.pets-row{
+  width:950px;
 
+}
         
         .caption-container {
           text-align: center;

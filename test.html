@@ -5,18 +5,36 @@
 <style>
 
 </style>
+<link rel="stylesheet" type="text/css" href="css/timeline.css">
+<link rel="stylesheet" type="text/css" href="css/photos.css">
 </head>
 <body>
 
-<h2>Fade in Overlay</h2>
-<p>Hover over the image to see the effect.</p>
-
-<div class="overlay-photo">
-  <img src="photos/spiderplant.jpg" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">Hello World</div>
+  <div class = "overlay-photo">
+    <img src="photos/Angel100.jpg" style="width:100%; border-radius:50%;" onclick="openAngelModal();currentSlide(1)" class="hover-shadow cursor">
+    <div class = "overlay">
+    <div class = "text">Angel</div>
   </div>
-</div>
+  </div>
+  <div class = "overlay-photo">
+      <img src="photos/Atlas100.jpg" style="width:100%; border-radius:50%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <div class = "overlay">
+              <div class = "text">Atlas</div>
+          </div>
+      </div>
+      <div class = "overlay-photo">
+          <img src="photos/MeeMaw.jpg" style="width:100%;border-radius:50%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          <div class = "overlay">
+                  <div class = "text">MeeMaw</div>
+              </div>
+          </div>
+          <div class = "overlay-photo">
+              <img src="photos/Kiwi100.jpg" style="width:100%;border-radius:50%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              <div class = "overlay">
+                      <div class = "text">Kiwi</div>
+                  </div>
+              </div> 
+  
 
 </body>
 </html>
