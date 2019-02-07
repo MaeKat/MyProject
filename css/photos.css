@@ -123,15 +123,21 @@
         .hover-shadow:hover {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        .overlay-photo {
+.overlay-photo {
   position: relative;
-  width: 50%;
+  width: 75%;
   margin:20px;
+  height: 200px;
+  border-radius:50%;
+}
+.pet-photo{
+  width:100%; 
+  border-radius:50%;
 }
 
 .image {
   display: block;
-  width: 100%;
+  width: 200px;
   height: auto;
 }
 
@@ -149,7 +155,7 @@
   width: 100%;
   opacity: 0;
   transition: .7s ease;
-  background-color: #008CBA;
+  background-color: rgb(108, 36, 202);
 }
 
 .overlay-photo:hover .overlay {
