@@ -93,7 +93,7 @@
           width: 25%;
         }
 .row{
-  width:80%;
+  min-height: 40em;
 }
 .pets-row{
   width:950px;
