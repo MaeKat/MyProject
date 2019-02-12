@@ -92,6 +92,17 @@ for (var i = 0; i < 500; i++) {
     context.restore();
   }
 
+function displayText(){
+    context.font = "30px Arial";
+    context.fillStyle = "red";
+    context.fillText("Velocity:"+ spaceship.velocity.y.toFixed(3),500,50);
+}
+function onCanvas(){
+    if(spaceship.position.x>800) {
+        spaceship.position.x = 0;
+    }
+}
+
 function drawSpaceship()
 {
     context.save();
@@ -141,13 +152,12 @@ function updateSpaceship()
         spaceship.velocity.y += spaceship.thrust * Math.cos(spaceship.angle);
     }
     spaceship.velocity.y += gravity;
-    
+
+    onCanvas();
     isHit();
     isMiss();
+    displayText();
 }
-
-
-
 
 function keyLetGo(event)
 {

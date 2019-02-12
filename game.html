@@ -29,5 +29,21 @@
     <br>
 
     <h2>Lunar Lander</h2>
+    <p>Help the rocket land without breaking!</p>
   </body>
+  <script>
+
+
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "-150px";
+        } else {
+          document.getElementById("navbar").style.top = "0px";
+        }
+        prevScrollpos = currentScrollPos;
+      }   
+          
+          </script>
 </html>
