@@ -34,7 +34,8 @@ var lander = {
 function isHit(){
     if (lander.y < spaceship.position.y && (spaceship.position.x > lander.x && spaceship.position.x < (lander.x +lander.width))){
        alert("Hit!")
-        window.location.reload();
+       document.location.reload();
+       clearInterval(interval);
 
 }
     
@@ -42,7 +43,8 @@ function isHit(){
 function isMiss(){
     if(spaceship.position.y > lander.y+10){
         alert("Miss!")
-         window.location.reload();
+        document.location.reload();
+        clearInterval(interval);
 
     }      
 
