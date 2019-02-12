@@ -32,8 +32,14 @@ var lander = {
 }
 
 function isHit(){
-    if (lander.y < spaceship.position.y && (spaceship.position.x > lander.x && spaceship.position.x < (lander.x +lander.width))){
-       alert("Hit!")
+    if (((lander.y- lander.height+2) < spaceship.position.y && (spaceship.position.x > lander.x && spaceship.position.x < (lander.x +lander.width))) ){
+       if(spaceship.velocity.x < .5){
+        alert("Landed!")
+       }
+       else{
+           alert("You Died!")
+       }
+        
        document.location.reload();
        clearInterval(interval);
 
@@ -41,8 +47,8 @@ function isHit(){
     
 }
 function isMiss(){
-    if(spaceship.position.y > lander.y+10){
-        alert("Miss!")
+    if((spaceship.position.y > lander.y+10)) {
+        alert("You Died!")
         document.location.reload();
         clearInterval(interval);
 

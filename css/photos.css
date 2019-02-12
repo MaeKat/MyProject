@@ -94,6 +94,7 @@
         }
 .row{
   min-height: 40em;
+  min-width: 60em;
 }
 .pets-row{
   width:950px;
