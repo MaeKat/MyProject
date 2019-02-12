@@ -187,7 +187,7 @@ function keyPressed(event)
         case 38:
             // Up Arrow key
             spaceship.engineOn = true;
-            break;
+            break;   
     }
 }
 
