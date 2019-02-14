@@ -174,3 +174,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.column{
+float:left;
+width:25%
+
+}
